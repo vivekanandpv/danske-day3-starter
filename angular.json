@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "danske-day3-starter"
+    }
+  },
+  "defaultProject": "danske-day3-starter",
+  "cli": {
+    "analytics": "5c21bea4-1336-4aa2-b9da-767a5ef8456c"
+  }
 }
