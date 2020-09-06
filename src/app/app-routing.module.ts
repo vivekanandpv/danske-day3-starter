@@ -26,7 +26,20 @@ const routes: Routes = [
   },
   {
     path: 'hr',
-    component: HrComponent,
+    children: [
+      {
+        path: '',
+        component: HrComponent,
+      },
+      {
+        path: ':city',
+        component: HrComponent,
+      },
+      {
+        path: ':city/:year',
+        component: HrComponent,
+      },
+    ],
   },
   {
     path: '**',
