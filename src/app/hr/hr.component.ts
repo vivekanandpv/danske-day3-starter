@@ -10,6 +10,7 @@ export class HrComponent implements OnInit {
   city: string;
   year: number;
   qp: object;
+  fragment: string;
 
   constructor(private ar: ActivatedRoute) {}
 
@@ -18,5 +19,6 @@ export class HrComponent implements OnInit {
     this.year = +this.ar.snapshot.paramMap.get('year');
 
     this.qp = this.ar.snapshot.queryParams;
+    this.fragment = this.ar.snapshot.fragment;
   }
 }
