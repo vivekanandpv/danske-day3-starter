@@ -2,11 +2,4 @@
 
 <hr />
 
-<button
-  class="btn btn-warning"
-  [routerLink]="['/hr', 'Hyderabad', 2018]"
-  [queryParams]="{ key: 'India' }"
-  [fragment]="'my-fragment'"
->
-  Go to HR
-</button>
+<button class="btn btn-warning" (click)="clickHandler()">Go to HR</button>
